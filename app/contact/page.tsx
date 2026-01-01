@@ -8,12 +8,8 @@ export default function ContactPage() {
             <SiteHeader />
             <div className="pt-32 pb-12">
                 <div className="container px-4 md:px-6 mb-8 text-center">
-                    <div className="inline-flex items-center gap-2 mb-6 text-xs font-mono text-muted-foreground uppercase tracking-widest justify-center">
-                        <span className="w-8 h-[1px] bg-primary/40"></span>
-                        Communication_Uplink
-                        <span className="w-8 h-[1px] bg-primary/40"></span>
-                    </div>
-                    <h1 className="text-4xl font-bold tracking-tight">Let's Connect</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Let's Connect</h1>
+                    <p className="text-muted-foreground">Open channels for collaboration.</p>
                 </div>
                 <ContactSection />
             </div>

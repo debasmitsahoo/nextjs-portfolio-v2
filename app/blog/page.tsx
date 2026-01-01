@@ -1,84 +1,111 @@
+"use client";
+
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { getAllPosts } from "@/lib/blog-data";
+import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Link from "next/link";
-
-const blogPosts = [
-    {
-        slug: "optimizing-nextjs-performance",
-        title: "Optimizing Next.js 14 Performance for Scale",
-        summary: "Deep dive into server components, image optimization, and route handling for maximum speed.",
-        date: "2025-12-15",
-        tags: ["Next.js", "Performance", "React"],
-        readTime: "5 min read"
-    },
-    {
-        slug: "3d-web-experiences",
-        title: "Building Immersive 3D Web Experiences",
-        summary: "How to integrate React Three Fiber without sacrificing accessibility or load times.",
-        date: "2025-11-20",
-        tags: ["Three.js", "R3F", "Design"],
-        readTime: "7 min read"
-    },
-    {
-        slug: "design-systems-engineering",
-        title: "Bridging Design & Engineering with Systems",
-        summary: "Creating a shared language between Figma and Code using Tailwind and Shadcn.",
-        date: "2025-10-05",
-        tags: ["Design Systems", "Workflow", "UI/UX"],
-        readTime: "6 min read"
-    }
-];
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function BlogPage() {
+    const blogPosts = getAllPosts();
+
     return (
         <main className="min-h-screen bg-background">
             <SiteHeader />
             <div className="pt-32 pb-12">
-                <div className="container px-4 md:px-6 mb-12">
-                    <div className="inline-flex items-center gap-2 mb-6 text-xs font-mono text-muted-foreground uppercase tracking-widest">
-                        <span className="w-8 h-[1px] bg-primary/40"></span>
-                        Dev_Logs
+                <div className="container px-4 md:px-6 mb-16">
+                    {/* Cinematic Header */}
+                    <div className="space-y-6">
+                        <div className="flex items-center gap-3">
+                            <div className="h-[1px] w-12 bg-primary"></div>
+                            <span className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-primary">
+                                System_Log: v.4.0
+                            </span>
+                        </div>
+
+                        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">
+                            THOUGHTS & <br className="hidden md:block" />
+                            <span className="text-muted-foreground stroke-text">INSIGHTS</span>
+                        </h1>
+
+                        <p className="max-w-xl text-lg text-muted-foreground/80 leading-relaxed font-light border-l-2 border-primary/20 pl-6">
+                            Writing about web development, design systems, and the future of digital interfaces.
+                            <span className="block mt-2 font-mono text-xs text-primary/60">
+                                // DEV_LOGS: ACTIVE
+                            </span>
+                        </p>
                     </div>
-                    <h1 className="text-4xl font-bold tracking-tight">Thoughts & Insights</h1>
-                    <p className="text-muted-foreground mt-4 max-w-2xl">
-                        Writing about web development, design systems, and the future of digital interfaces.
-                    </p>
                 </div>
 
                 <div className="container px-4 md:px-6">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {blogPosts.map((post) => (
-                            <Card key={post.slug} className="flex flex-col h-full hover:border-primary/50 transition-colors group">
-                                <CardHeader>
-                                    <div className="flex justify-between items-center mb-4">
-                                        <span className="text-xs font-mono text-muted-foreground">{post.date}</span>
-                                        <span className="text-xs font-mono text-muted-foreground">{post.readTime}</span>
-                                    </div>
-                                    <CardTitle className="text-xl group-hover:text-primary transition-colors leading-tight">
-                                        {post.title}
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="flex-1">
-                                    <CardDescription className="text-base line-clamp-3">
-                                        {post.summary}
-                                    </CardDescription>
-                                </CardContent>
-                                <CardFooter className="flex flex-col items-start gap-4">
-                                    <div className="flex flex-wrap gap-2">
-                                        {post.tags.map(tag => (
-                                            <Badge key={tag} variant="secondary" className="font-mono text-[10px]">{tag}</Badge>
-                                        ))}
-                                    </div>
-                                    <Link href={`#`} className="w-full">
-                                        <div className="flex items-center text-sm font-medium text-primary mt-2">
-                                            Read Article <ArrowRight className="ml-2 h-4 w-4" />
+                        {blogPosts.map((post, i) => (
+                            <motion.div
+                                key={post.slug}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.05 }}
+                            >
+                                <Link href={`/blog/${post.slug}`} className="flex flex-col h-full group outline-none">
+                                    <article className="flex-1 relative flex flex-col justify-between p-0 rounded-xl border border-border/40 bg-card/30 backdrop-blur-sm hover:bg-card/50 hover:border-primary/50 transition-all duration-300 overflow-hidden">
+
+                                        {/* Image Header */}
+                                        <div className="relative h-48 w-full overflow-hidden border-b border-border/40">
+                                            <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                            <Image
+                                                src={post.image}
+                                                alt={post.title}
+                                                fill
+                                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                            />
                                         </div>
-                                    </Link>
-                                </CardFooter>
-                            </Card>
+
+                                        <div className="p-6 flex-1 flex flex-col">
+                                            {/* Hover Glow */}
+                                            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl" />
+
+                                            <div>
+                                                {/* Meta */}
+                                                <div className="flex items-center justify-between mb-4 text-xs font-mono text-muted-foreground">
+                                                    <div className="flex items-center gap-1.5">
+                                                        <Calendar className="w-3 h-3" />
+                                                        {post.date}
+                                                    </div>
+                                                    <div className="flex items-center gap-1.5">
+                                                        <Clock className="w-3 h-3" />
+                                                        {post.readTime}
+                                                    </div>
+                                                </div>
+
+                                                <h2 className="text-2xl font-bold leading-tight mb-3 group-hover:text-primary transition-colors">
+                                                    {post.title}
+                                                </h2>
+
+                                                <p className="text-muted-foreground leading-relaxed mb-6 line-clamp-3">
+                                                    {post.summary}
+                                                </p>
+                                            </div>
+
+                                            <div className="mt-auto pt-6 border-t border-border/40 flex flex-col gap-4">
+                                                <div className="flex flex-wrap gap-2">
+                                                    {post.tags.map(tag => (
+                                                        <span key={tag} className="px-2 py-0.5 rounded bg-secondary/50 border border-border/50 text-xs font-mono text-secondary-foreground">
+                                                            {tag}
+                                                        </span>
+                                                    ))}
+                                                </div>
+
+                                                <div className="flex items-center text-sm font-bold text-primary opacity-80 group-hover:opacity-100 transition-opacity">
+                                                    Read Article <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </Link>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export function AboutSection() {
                     </h2>
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                         <p>
-                            I’m Debasmit Sahoo, a Creative Manager and Front-End Engineer with a strong foundation in both design systems and modern web development. I specialize in building intuitive, visually refined, and high-performance digital experiences that scale.
+                            I’m Debasmit Sahoo, a Full Stack Architect and Cloud Engineer with a strong foundation in system design and distributed infrastructure. I specialize in architecting accessible, secure, and highly scalable digital ecosystems that drive business growth.
                         </p>
                         <p>
                             My work sits at the intersection of design thinking and engineering execution—bridging creative vision with clean, maintainable code. I focus on user-centered design, accessibility, and performance to deliver products that are both elegant and reliable.

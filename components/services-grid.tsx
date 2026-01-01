@@ -30,7 +30,7 @@ const services = [
     {
         icon: <Database className="h-6 w-6" />,
         title: "Full-Stack Integration",
-        description: "Seamlessly connecting front-ends to backend services like Supabase, Firebase, or custom APIs."
+        description: "Architecting robust backend services, APIs, and seamless front-end integrations."
     }
 ];
 
