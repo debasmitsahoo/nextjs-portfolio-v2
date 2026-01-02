@@ -5,20 +5,38 @@ import { Briefcase, Calendar, MapPin, Building2, Terminal } from "lucide-react";
 
 const experienceList = [
     {
+        id: "craftsmith",
+        year: "2021",
+        title: "Founder",
+        company: "CraftSmith",
+        location: "Bhubaneswar, India",
+        period: "Jan 2021 - Present",
+        type: "Full-time",
+        description: [
+            "Designed and developed the official CraftSmith website from scratch using Next.js, focusing on performance, SEO, and responsive design",
+            "Implemented modern UI components with clean layouts to showcase Odisha handicraft products and brand identity",
+            "Optimized page load performance and SEO, achieving strong Lighthouse scores",
+            "Deployed and managed the production site, including domain and DNS configuration",
+            "Translated business requirements into a scalable web presence supporting brand growth and customer engagement"
+        ],
+        tags: ["Next.js", "SEO", "Performance", "UI/UX", "Product Design"]
+    },
+    {
         id: "tpipay",
         year: "2025",
-        title: "Creative Manager & Front-End Developer",
-        company: "Tpipay Fintech Private Ltd",
+        title: "Creative Manager (Frontend & UI Engineering)",
+        company: "TPIPAY FINTECH PRIVATE LIMITED",
         location: "Bhubaneswar, India",
         period: "Mar – Jun",
         type: "Full-time",
         description: [
-            "Lead Frontend Developer for 'Feel Education', translating complex educational requirements into a responsive, user-centric web platform.",
-            "Directed the company's visual identity, producing high-fidelity graphical assets, motion graphics, and marketing collaterals using Adobe Suite.",
-            "Bridged the gap between Design and Engineering, ensuring pixel-perfect implementation of UI/UX standards.",
-            "Managed creative workflows for multimedia campaigns while simultaneously delivering production-ready React code."
+            "Led frontend development initiatives during early-stage product development",
+            "Built and maintained responsive UI components using modern JavaScript frameworks",
+            "Translated academic and business requirements into scalable frontend solutions",
+            "Collaborated with product and engineering stakeholders during active development cycles",
+            "Ensured technical feasibility, performance, and usability while managing creative direction"
         ],
-        tags: ["React / Next.js", "Adobe Creative Suite", "UI/UX Design", "Brand Strategy"]
+        tags: ["React / Next.js", "UI Engineering", "Frontend Architecture", "Performance"]
     }
 ];
 

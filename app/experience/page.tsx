@@ -86,7 +86,7 @@ export default function ExperiencePage() {
                                         </h2>
                                     </div>
                                     <div className="flex flex-wrap gap-2">
-                                        {["Cloud Native", "System Design", "DevRel", "UI Engineering", "Community"].map(tag => (
+                                        {["UI Engineering", "Full-Stack Web Development", "Cloud & Deployment Fundamentals", "System Design (Foundations)", "Community & Leadership"].map(tag => (
                                             <span key={tag} className="text-xs font-mono px-2 py-1 rounded bg-secondary/30 text-secondary-foreground border border-border/50">
                                                 {tag}
                                             </span>

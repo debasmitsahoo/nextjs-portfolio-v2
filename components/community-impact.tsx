@@ -23,9 +23,9 @@ const communityList = [
         period: "Mar 2025 – Present",
         icon: Megaphone,
         description: [
-            "Architected cohesive visual systems and brand strategy for 'Build With AI' and regional tech summits.",
-            "Orchestrated end-to-end execution of 'HackForge x Build With AI' (100+ attendees), ensuring seamless logistics.",
-            "Co-led speaker operations and marketing assets for Cloud Community Days 2025, driving record engagement."
+            "Volunteered across multiple GDG and GDG Cloud Bhubaneswar events, supporting event execution, on-ground coordination, and participant experience",
+            "Assisted in workshops and hackathons conducted in collaboration with college tech communities and student clubs",
+            "Contributed to logistics, registrations, and session coordination to ensure smooth execution of community-driven technical events"
         ]
     },
     {
@@ -35,9 +35,10 @@ const communityList = [
         period: "Apr 2024 – Present",
         icon: Users,
         description: [
-            "Spearheaded UI/UX hackathons and technical enablement sessions, fostering a culture of innovation.",
-            "Co-hosted 'Build With AI' workshops in partnership with GDG, bridging academic and professional ecosystems.",
-            "Managed strategic partnerships, speaker coordination, and community outreach for campus-wide initiatives."
+            "Core member of the college technical club involved in planning and executing hackathons, workshops, and tech-focused events",
+            "Co-organized large-scale events including HackForge and Brahmastra, supporting logistics, registrations, and technical coordination",
+            "Worked closely with external developer communities to host collaborative workshops and hands-on sessions",
+            "Contributed to event operations, speaker coordination, and participant engagement to ensure smooth execution"
         ]
     }
 ];
