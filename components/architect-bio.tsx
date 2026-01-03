@@ -22,7 +22,7 @@ export function ArchitectBio() {
 
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-light">
                         <p>
-                            Code is ephemeral; architecture is foundational. As a Full Stack Architect and AI Engineer, I don&apos;t just deliver features—I engineer systems that scale, endure, and perform under pressure.
+                            Code is the medium; impact is the goal. As a Full Stack Developer and AI Engineer, I don&apos;t just deliver features—I engineer systems that scale, endure, and perform under pressure.
                         </p>
                         <p>
                             My approach combines mathematical precision with creative problem-solving. Whether it&apos;s orchestrating distributed cloud clusters or fine-tuning neural network inference, I focus on the intersection of **reliability** and **velocity**.

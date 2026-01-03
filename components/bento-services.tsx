@@ -8,7 +8,7 @@ export function BentoServices() {
     return (
         <section className="py-24 border-b border-border/40 bg-background relative overflow-hidden">
             <div className="container px-4 md:px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
                     <div className="space-y-4 max-w-2xl">
                         <div className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground uppercase tracking-widest">
                             <span className="w-8 h-[1px] bg-primary/40"></span>

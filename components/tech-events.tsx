@@ -88,7 +88,7 @@ export function TechEvents() {
                             </div>
 
                             <div className="mb-6">
-                                <h3 className="font-bold text-lg leading-tight mb-2 group-hover:text-primary transition-colors">
+                                <h3 className="font-bold text-lg leading-tight mb-2 group-hover:text-primary transition-colors pr-12">
                                     {event.name}
                                 </h3>
                                 <div className="inline-flex items-center px-2 py-1 rounded bg-background border border-border/50 text-xs font-medium text-foreground/80">

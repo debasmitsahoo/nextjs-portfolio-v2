@@ -32,13 +32,14 @@ export function ProjectShowcase() {
         <section className="py-32 border-t border-border/40 bg-background relative overflow-hidden">
             <div className="container px-4 md:px-6 relative z-10">
                 {/* Section Header */}
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-border/40 pb-4">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-border/40 pb-4">
                     <div className="space-y-2">
-                        <h2 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+                        <div className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground uppercase tracking-widest">
+                            <span className="w-8 h-[1px] bg-primary/40"></span>
                             Featured_Work
-                        </h2>
+                        </div>
                         <h3 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
-                            Engineering <span className="text-primary">Impact</span>.
+                            Engineering <span className="text-muted-foreground">Impact</span>.
                         </h3>
                     </div>
 

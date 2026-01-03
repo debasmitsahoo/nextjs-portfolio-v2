@@ -39,7 +39,7 @@ export function MarkdownAbout() {
 
                         {/* Bio Paragraph */}
                         <div className="text-gray-300">
-                            As a <span className="text-purple-400 font-bold">Full Stack Architect</span> & <span className="text-purple-400 font-bold">AI Engineer</span>, I specialize in building heavy-lifting distributed infrastructure. My work bridges the gap between <span className="text-green-400">complex backend logic</span> and <span className="text-green-400">intuitive user experiences</span>.
+                            As a <span className="text-purple-400 font-bold">Full Stack Developer</span> & <span className="text-purple-400 font-bold">AI Engineer</span>, I specialize in building heavy-lifting distributed infrastructure. My work bridges the gap between <span className="text-green-400">complex backend logic</span> and <span className="text-green-400">intuitive user experiences</span>.
                         </div>
 
                         {/* Philosophy */}

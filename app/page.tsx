@@ -21,13 +21,13 @@ export default function Home() {
                         "@context": "https://schema.org",
                         "@type": "Person",
                         "name": "Debasmit Sahoo",
-                        "jobTitle": "Full Stack Architect & Cloud Engineer",
+                        "jobTitle": "Full Stack Developer & AI Engineer",
                         "url": "https://debasmit.com",
                         "sameAs": [
                             "https://linkedin.com/in/debasmitsahoo",
                             "https://github.com/debasmitsahoo"
                         ],
-                        "description": "Debasmit Sahoo is a Full Stack Architect and Cloud Engineer building scalable, distributed systems.",
+                        "description": "Debasmit Sahoo is a Full Stack Developer and AI Engineer building intelligent web applications.",
                     })
                 }}
             />
@@ -45,7 +45,10 @@ export default function Home() {
                                 <span className="w-8 h-[1px] bg-primary/40"></span>
                                 Operator_Profile
                             </div>
-                            <h2 className="text-3xl font-bold max-w-lg mb-4">Engineered for Performance. Designed for Humans.</h2>
+                            <h2 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight mb-4">
+                                Engineered for Performance. <br />
+                                <span className="text-muted-foreground">Designed for Humans.</span>
+                            </h2>
                             <p className="text-lg text-muted-foreground leading-relaxed">
                                 I engineer systems where performance meets precision. Moving beyond simple implementations, I design distributed cloud architectures and intelligent interfaces that drive real business impact at scale.
                             </p>

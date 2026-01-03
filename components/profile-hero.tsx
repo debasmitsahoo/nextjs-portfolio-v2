@@ -55,19 +55,19 @@ export function ProfileHero() {
                             Engineering Intelligence
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
-                            I architect systems for the <span className="text-primary">Intelligence Era</span>.
+                            I build systems for the <span className="text-primary">Intelligence Era</span>.
                         </h1>
                     </div>
 
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                         <p>
-                            <span className="text-foreground font-semibold">Code is ephemeral; architecture is foundational.</span> As a Full Stack Architect and AI Engineer, I don&apos;t just deliver features—I engineer systems that scale, endure, and perform under pressure.
+                            <span className="text-foreground font-semibold">Code is the medium; impact is the goal.</span> As a Full Stack Developer and AI Engineer, I don&apos;t just ship features—I engineer intelligent applications that are fast, intuitive, and built to scale.
                         </p>
                         <p>
-                            My approach combines mathematical precision with creative problem-solving. Whether it&apos;s orchestrating distributed cloud clusters or fine-tuning neural network inference, I focus on the intersection of <span className="text-foreground font-medium">reliability</span> and <span className="text-foreground font-medium">velocity</span>.
+                            My approach bridges the gap between complex algorithms and smooth user experiences. Whether it&apos;s integrating advanced AI models or optimizing frontend performance, I focus on the intersection of <span className="text-foreground font-medium">functionality</span> and <span className="text-foreground font-medium">delight</span>.
                         </p>
                         <p>
-                            True innovation happens when complex backend logic meets intuitive, accessible design.
+                            True innovation happens when powerful technology feels effortless to use.
                         </p>
                     </div>
 

@@ -4,16 +4,16 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: 'Debasmit Sahoo Portfolio',
         short_name: 'Debasmit',
-        description: 'Full Stack Architect & AI Engineer Portfolio',
+        description: 'Full Stack Developer & AI Engineer Portfolio',
         start_url: '/',
         display: 'standalone',
         background_color: '#030711', // Matches bg-background
         theme_color: '#030711',
         icons: [
             {
-                src: '/favicon.ico',
+                src: '/icon.png',
                 sizes: 'any',
-                type: 'image/x-icon',
+                type: 'image/png',
             },
         ],
     };

@@ -30,16 +30,16 @@ export function HeroSection() {
                             </h1>
                             <h2 className="text-xl md:text-2xl font-mono font-medium mt-2">
                                 <span className="text-primary/60 mr-1">&lt;</span>
-                                <span className="text-foreground">FullStack_Architect</span>
+                                <span className="text-foreground">FullStack_Developer</span>
                                 <span className="text-primary/60 ml-1">/&gt;</span>
                             </h2>
                         </div>
 
                         <div className="max-w-lg relative pl-6 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-[2px] before:bg-gradient-to-b before:from-transparent before:via-primary before:to-transparent">
                             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light">
-                                Architecting <span className="text-foreground font-normal">scalable distributed systems</span> and <span className="text-foreground font-normal">intelligent AI solutions</span>.
+                                Building <span className="text-foreground font-normal">scalable web applications</span> and <span className="text-foreground font-normal">intelligent AI agents</span>.
                                 <br className="hidden md:block" />
-                                I turn complex challenges into <span className="text-foreground font-normal">elegant, high-performance</span> digital experiences.
+                                I turn complex ideas into <span className="text-foreground font-normal">elegant, high-performance</span> digital experiences.
                             </p>
                         </div>
 
