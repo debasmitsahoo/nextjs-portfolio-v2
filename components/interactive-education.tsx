@@ -28,6 +28,36 @@ const educationList = [
 
 const awardList = [
     {
+        id: "award-ai-volution",
+        type: "award",
+        year: "2026",
+        title: "Top 10 National Emerging Team",
+        institution: "AI-Volution, IIT Kharagpur",
+        subtitle: "NSCIF 2026 | New Delhi",
+        description: "Advanced as a Semi-Finalist in AI-Volution at IIT Kharagpur, subsequently representing at the National Student Change Initiatives Fest (NSCIF) in New Delhi. Ranked among the Top 10 National Emerging Teams for innovative technical architecture.",
+        tags: ["AI Innovation", "National Finalist", "Scalable Tech"],
+    },
+    {
+        id: "award-metaweb",
+        type: "award",
+        year: "2026",
+        title: "1st Rank: Metaweb UI/UX",
+        institution: "Metaweb Hackathon",
+        subtitle: "Excellence in Interface Architecture",
+        description: "Clinched the top spot in the Metaweb UI/UX Hackathon by engineering an immersive design system. Focused on bridging the gap between high-performance logic and intuitive, human-centric user experiences.",
+        tags: ["UI/UX Engineering", "Product Design", "Design Systems"],
+    },
+    {
+        id: "award-startup-quiz",
+        type: "award",
+        year: "2026",
+        title: "Winner: National Startup Quiz",
+        institution: "GES 2026, IIT Kharagpur",
+        subtitle: "Global Entrepreneurship Summit",
+        description: "Secured victory in the Startup Quiz at the Global Entrepreneurship Summit (GES), IIT Kharagpur. Demonstrated exceptional acumen in business strategy, startup ecosystems, and disruptive innovation trends.",
+        tags: ["Entrepreneurship", "Business Strategy", "Intelligence"],
+    },
+    {
         id: "award-student-year",
         type: "award",
         year: "2025",

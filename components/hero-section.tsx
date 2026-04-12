@@ -47,8 +47,10 @@ export function HeroSection() {
                             <Button size="lg" className="rounded-none border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 font-mono text-xs uppercase tracking-widest h-12 px-8">
                                 Initialize_Project
                             </Button>
-                            <Button variant="outline" size="lg" className="rounded-none border-2 h-12 px-8 text-xs font-mono uppercase tracking-widest hover:bg-secondary">
-                                Download_Data
+                            <Button asChild variant="outline" size="lg" className="rounded-none border-2 h-12 px-8 text-xs font-mono uppercase tracking-widest hover:bg-secondary">
+                                <a href="/Debasmit_Sahoo_Full_Stack_Developer_Resume.pdf" download="Debasmit_Sahoo_Resume.pdf">
+                                    Download_Data
+                                </a>
                             </Button>
                         </div>
                     </div>
