@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function ContactSection() {
     return (
-        <section className="py-12">
+        <section id="contact" className="py-12">
             <div className="container px-4 max-w-3xl mx-auto">
                 {/* Cinematic Card */}
                 <div className="relative p-8 md:p-12 rounded-2xl border border-border/50 bg-card/30 backdrop-blur-xl shadow-2xl overflow-hidden">

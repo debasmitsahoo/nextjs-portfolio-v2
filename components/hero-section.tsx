@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { TechProfile } from "./tech-profile";
+import Link from "next/link";
 
 export function HeroSection() {
     return (
@@ -44,8 +45,8 @@ export function HeroSection() {
                         </div>
 
                         <div className="flex flex-wrap gap-4 pt-4">
-                            <Button size="lg" className="rounded-none border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 font-mono text-xs uppercase tracking-widest h-12 px-8">
-                                Initialize_Project
+                            <Button asChild size="lg" className="rounded-none border-2 border-primary bg-primary text-primary-foreground hover:bg-primary/90 font-mono text-xs uppercase tracking-widest h-12 px-8">
+                                <Link href="/contact">Initialize_Project</Link>
                             </Button>
                             <Button asChild variant="outline" size="lg" className="rounded-none border-2 h-12 px-8 text-xs font-mono uppercase tracking-widest hover:bg-secondary">
                                 <a href="/Debasmit_Sahoo_Full_Stack_Developer_Resume.pdf" download="Debasmit_Sahoo_Resume.pdf">
