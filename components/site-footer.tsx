@@ -5,7 +5,7 @@ export function SiteFooter() {
         <footer className="w-full border-t py-8 bg-background">
             <div className="container flex flex-col items-center justify-center gap-6 md:h-24">
                 <div className="flex items-center gap-6">
-                    <a href="mailto:debasmitfordev@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    <a href="mailto:work@debasmit.com" className="text-muted-foreground hover:text-primary transition-colors">
                         <span className="sr-only">Email</span>
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </a>

@@ -27,7 +27,7 @@ export function ContactSection() {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="mailto:debasmitfordev@gmail.com" className="w-full sm:w-auto">
+                            <a href="mailto:work@debasmit.com" className="w-full sm:w-auto">
                                 <Button size="lg" className="w-full rounded-lg gap-2 font-mono text-xs uppercase tracking-wider">
                                     <Mail size={16} /> Send Email
                                 </Button>
