@@ -38,11 +38,7 @@ export function TechProfile() {
                     </div>
 
                     <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '400ms' }}>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Full Stack'</span>, <span className="text-green-400">'Cloud Arch.'</span>,
-                    </div>
-
-                    <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '500ms' }}>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'AI/ML Eng.'</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Full Stack'</span>, <span className="text-green-400">'Cloud Arch.'</span>
                     </div>
 
                     <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '600ms' }}>
@@ -54,11 +50,11 @@ export function TechProfile() {
                     </div>
 
                     <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '800ms' }}>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Next.js'</span>, <span className="text-green-400">'AWS'</span>,
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Next.js'</span>, <span className="text-green-400">'GCP'</span>,
                     </div>
 
                     <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '900ms' }}>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Python'</span>, <span className="text-green-400">'PyTorch'</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">'Python'</span>, <span className="text-green-400">'Docker'</span>
                     </div>
 
                     <div className="animate-in fade-in slide-in-from-left-2 duration-500 whitespace-nowrap" style={{ animationDelay: '1000ms' }}>

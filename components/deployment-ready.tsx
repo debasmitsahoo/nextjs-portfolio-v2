@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function DeploymentReady() {
     return (
-        <section className="py-32 border-b border-border/40 relative overflow-hidden bg-background">
+        <section className="py-16 md:py-20 border-b border-border/40 relative overflow-hidden bg-background">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:60px_60px] pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />

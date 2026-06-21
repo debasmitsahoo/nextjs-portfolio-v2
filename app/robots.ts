@@ -1,13 +1,16 @@
 import { MetadataRoute } from 'next';
+import { SITE } from '@/lib/seo';
 
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = 'https://debasmit.com';
-
     return {
-        rules: {
-            userAgent: '*',
-            allow: '/',
-        },
-        sitemap: `${baseUrl}/sitemap.xml`,
+        rules: [
+            {
+                userAgent: '*',
+                allow: '/',
+                disallow: ['/api/'],
+            },
+        ],
+        sitemap: `${SITE.url}/sitemap.xml`,
+        host: SITE.url,
     };
 }

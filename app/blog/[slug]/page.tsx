@@ -5,12 +5,30 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import { schemaGraph, articleNode, breadcrumbNode } from "@/lib/schema";
 
 export async function generateStaticParams() {
     const posts = getAllPosts();
     return posts.map((post) => ({
         slug: post.slug,
     }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+    const post = getPostBySlug(params.slug);
+    if (!post) {
+        return { title: "Article Not Found", robots: { index: false, follow: true } };
+    }
+    return buildMetadata({
+        title: `${post.title} | Debasmit Sahoo`,
+        description: post.summary,
+        path: `/blog/${post.slug}`,
+        image: post.image,
+        keywords: [...post.tags, "Debasmit Sahoo", "Debasmit Sahoo Blog"],
+        type: "article",
+    });
 }
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
@@ -32,8 +50,18 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         );
     }
 
+    const articleJsonLd = schemaGraph(
+        articleNode(post),
+        breadcrumbNode([
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path: `/blog/${post.slug}` },
+        ])
+    );
+
     return (
         <main className="min-h-screen bg-background">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
             <SiteHeader />
             <article className="pt-32 pb-24">
                 <div className="container px-4 md:px-6 max-w-4xl mx-auto">

@@ -22,10 +22,10 @@ export function ArchitectBio() {
 
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed font-light">
                         <p>
-                            Code is the medium; impact is the goal. As a Full Stack Developer and AI Engineer, I don&apos;t just deliver features—I engineer systems that scale, endure, and perform under pressure.
+                            Code is the medium; impact is the goal. As a Full Stack Developer, I don&apos;t just deliver features—I engineer systems that scale, endure, and perform under pressure.
                         </p>
                         <p>
-                            My approach combines mathematical precision with creative problem-solving. Whether it&apos;s orchestrating distributed cloud clusters or fine-tuning neural network inference, I focus on the intersection of **reliability** and **velocity**.
+                            My approach combines mathematical precision with creative problem-solving. Whether it&apos;s orchestrating distributed cloud clusters or integrating LLMs into production apps, I focus on the intersection of **reliability** and **velocity**.
                         </p>
                         <p>
                             I believe that true innovation happens when complex backend logic meets intuitive, accessible design.
@@ -70,11 +70,11 @@ export function ArchitectBio() {
                         </h3>
                         <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted-foreground font-mono">
                             <span>Next.js 14</span>
-                            <span>AWS / Azure</span>
-                            <span>Python / PyTorch</span>
-                            <span>Go / Rust</span>
-                            <span>PostgreSQL</span>
-                            <span>Docker / K8s</span>
+                            <span>React / TypeScript</span>
+                            <span>Firebase / Supabase</span>
+                            <span>PostgreSQL / MySQL</span>
+                            <span>GCP / Vercel</span>
+                            <span>Docker / Nginx</span>
                         </div>
                     </div>
                 </div>

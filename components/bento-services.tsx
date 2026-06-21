@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export function BentoServices() {
     return (
-        <section className="py-24 border-b border-border/40 bg-background relative overflow-hidden">
+        <section className="py-16 md:py-20 border-b border-border/40 bg-background relative overflow-hidden">
             <div className="container px-4 md:px-6 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4">
                     <div className="space-y-4 max-w-2xl">
@@ -31,7 +31,7 @@ export function BentoServices() {
                             <div>
                                 <h3 className="text-2xl font-bold mb-2">Distributed Cloud Architecture</h3>
                                 <p className="text-muted-foreground max-w-sm">
-                                    Designing resilient, scalable systems using microservices patterns, AWS infrastructure, and Go for high-throughput capabilities.
+                                    Designing resilient, scalable systems using microservices patterns, GCP infrastructure, and Docker for scalable, high-throughput deployments.
                                 </p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export function BentoServices() {
                                 <Cpu className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold mb-2">AI Engineering</h3>
+                                <h3 className="text-xl font-bold mb-2">AI Integration</h3>
                                 <p className="text-muted-foreground text-sm">
                                     Deploying LLMs and intelligent agents that automate complex workflows.
                                 </p>

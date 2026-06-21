@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 
 const techs = [
-    "Next.js 14", "React", "TypeScript", "Tailwind CSS", "Node.js", "Three.js", "Figma",
-    "Supabase", "Git", "Redux", "GraphQL", "PostgreSQL", "Framer Motion", "Docker", "AWS"
+    "JavaScript", "TypeScript", "Python", "Java", "React", "Next.js", "Tailwind CSS",
+    "Material UI", "shadcn/ui", "Framer Motion", "Firebase", "Supabase", "PostgreSQL",
+    "MySQL", "GCP", "Docker", "Nginx", "Vercel", "Git", "Postman", "WordPress"
 ];
 
 export function TechTicker() {

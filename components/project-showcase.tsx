@@ -29,7 +29,7 @@ const projects = [
 
 export function ProjectShowcase() {
     return (
-        <section className="py-32 border-t border-border/40 bg-background relative overflow-hidden">
+        <section className="py-16 md:py-20 border-t border-border/40 bg-background relative overflow-hidden">
             <div className="container px-4 md:px-6 relative z-10">
                 {/* Section Header */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-border/40 pb-4">

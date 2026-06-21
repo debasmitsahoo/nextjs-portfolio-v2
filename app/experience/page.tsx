@@ -25,6 +25,7 @@ export default function ExperiencePage() {
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">
                             PROFESSIONAL <br className="hidden md:block" />
                             <span className="text-muted-foreground stroke-text">EXPERIENCE</span>
+                            <span className="sr-only"> — Debasmit Sahoo</span>
                         </h1>
 
                         <p className="max-w-xl text-lg text-muted-foreground/80 leading-relaxed font-light border-l-2 border-primary/20 pl-6">

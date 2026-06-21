@@ -8,6 +8,12 @@ export function LoadingScreen() {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
+        // Only show the intro once per session — repeat views skip it (better LCP/INP).
+        if (sessionStorage.getItem("ds_loaded")) {
+            setLoading(false);
+            return;
+        }
+
         // Lock scroll while the loader is visible
         document.body.style.overflow = "hidden";
 
@@ -26,6 +32,7 @@ export function LoadingScreen() {
             if (pct < 100) {
                 raf = requestAnimationFrame(tick);
             } else {
+                sessionStorage.setItem("ds_loaded", "1");
                 setTimeout(() => setLoading(false), 350);
             }
         };

@@ -61,7 +61,7 @@ export function ProfileHero() {
 
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                         <p>
-                            <span className="text-foreground font-semibold">Code is the medium; impact is the goal.</span> As a Full Stack Developer and AI Engineer, I don&apos;t just ship features—I engineer intelligent applications that are fast, intuitive, and built to scale.
+                            <span className="text-foreground font-semibold">Code is the medium; impact is the goal.</span> As a Full Stack Developer, I don&apos;t just ship features—I engineer intelligent applications that are fast, intuitive, and built to scale.
                         </p>
                         <p>
                             My approach bridges the gap between complex algorithms and smooth user experiences. Whether it&apos;s integrating advanced AI models or optimizing frontend performance, I focus on the intersection of <span className="text-foreground font-medium">functionality</span> and <span className="text-foreground font-medium">delight</span>.
@@ -73,7 +73,7 @@ export function ProfileHero() {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 border-t border-border/40">
                         <div>
-                            <div className="text-3xl font-bold text-foreground">2+</div>
+                            <div className="text-3xl font-bold text-foreground">3+</div>
                             <div className="text-xs font-mono text-muted-foreground uppercase tracking-wider mt-1">Years Active</div>
                         </div>
                         <div>

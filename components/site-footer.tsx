@@ -3,7 +3,14 @@ import Link from "next/link"
 export function SiteFooter() {
     return (
         <footer className="w-full border-t py-8 bg-background">
-            <div className="container flex flex-col items-center justify-center gap-6 md:h-24">
+            <div className="container flex flex-col items-center justify-center gap-6 py-4">
+                <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-mono uppercase tracking-wide text-muted-foreground">
+                    <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+                    <Link href="/projects" className="hover:text-primary transition-colors">Projects</Link>
+                    <Link href="/experience" className="hover:text-primary transition-colors">Experience</Link>
+                    <Link href="/education" className="hover:text-primary transition-colors">Education</Link>
+                    <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
+                </nav>
                 <div className="flex items-center gap-6">
                     <a href="mailto:work@debasmit.com" className="text-muted-foreground hover:text-primary transition-colors">
                         <span className="sr-only">Email</span>

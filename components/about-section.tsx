@@ -8,7 +8,7 @@ export function AboutSection() {
                     </h2>
                     <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                         <p>
-                            I’m Debasmit Sahoo, a Full Stack Developer and AI Engineer with a passion for building intelligent web solutions. I specialize in creating accessible, secure, and performant applications that solve real-world problems.
+                            I’m Debasmit Sahoo, a Full Stack Developer with a passion for building intelligent web solutions. I specialize in creating accessible, secure, and performant applications that solve real-world problems.
                         </p>
                         <p>
                             My work sits at the intersection of design thinking and engineering execution—bridging creative vision with clean, modern code. I focus on user experience, performance, and scalability to deliver products that are both robust and engaging.
