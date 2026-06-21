@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ArrowRight, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -44,7 +43,7 @@ export function DeploymentReady() {
                 </div>
 
                 {/* Footer Metadata */}
-                <div className="mt-16 flex items-center gap-8 text-[10px] font-mono text-muted-foreground uppercase opacity-50">
+                <div className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-[10px] font-mono text-muted-foreground uppercase opacity-50">
                     <div className="flex items-center gap-2">
                         <Terminal className="w-3 h-3" />
                         <span>Build_v2026.1.0</span>

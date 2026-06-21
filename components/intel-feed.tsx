@@ -11,7 +11,7 @@ export function IntelFeed() {
             <div className="absolute right-0 top-0 p-32 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="container px-4 md:px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
                     <div className="space-y-4">
                         <div className="inline-flex items-center gap-2 mb-2 text-xs font-mono text-muted-foreground uppercase tracking-widest">
                             <span className="w-8 h-[1px] bg-primary/40"></span>

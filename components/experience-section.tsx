@@ -5,6 +5,23 @@ import { Briefcase, Calendar, MapPin, Building2, Terminal } from "lucide-react";
 
 const experienceList = [
     {
+        id: "vireontech",
+        year: "2026",
+        title: "Product Engineering Intern",
+        company: "VireonTech",
+        location: "",
+        period: "June 2026 - Present",
+        type: "Internship",
+        description: [
+            "Migrated 22,000+ telemetry records from Google Sheets to Firestore",
+            "Provisioned an Ubuntu VM on GCP",
+            "Dockerized React applications",
+            "Implemented a Firebase dual-write architecture",
+            "Assisted in production deployment of an IoT dashboard"
+        ],
+        tags: ["Firestore", "GCP", "Docker", "Firebase", "React"]
+    },
+    {
         id: "craftsmith",
         year: "2021",
         title: "Founder",
@@ -76,10 +93,12 @@ export function ExperienceSection() {
                                             <Calendar className="w-3 h-3" />
                                             {item.period}
                                         </div>
-                                        <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground uppercase tracking-wide">
-                                            <MapPin className="w-3 h-3" />
-                                            {item.location}
-                                        </div>
+                                        {item.location && (
+                                            <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground uppercase tracking-wide">
+                                                <MapPin className="w-3 h-3" />
+                                                {item.location}
+                                            </div>
+                                        )}
                                     </div>
                                     <div className="inline-block px-2 py-1 rounded bg-primary/10 text-primary text-xs font-mono uppercase tracking-widest border border-primary/20">
                                         {item.type}

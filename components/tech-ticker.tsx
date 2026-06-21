@@ -17,7 +17,7 @@ export function TechTicker() {
             <div className="flex">
                 <motion.div
                     className="flex gap-16 pr-16 whitespace-nowrap"
-                    animate={{ x: "-50%" }}
+                    animate={{ x: "-33.333%" }}
                     transition={{
                         duration: 30,
                         ease: "linear",

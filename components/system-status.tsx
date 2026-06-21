@@ -22,7 +22,7 @@ export function SystemStatus() {
         <div className="h-full flex flex-col justify-between font-mono text-xs text-muted-foreground w-full">
             <div className="space-y-4">
                 <div className="flex items-center gap-2 text-primary border-b border-primary/20 pb-2">
-                    <span className="animate-spin duration-[3000ms]">✦</span>
+                    <span className="inline-block animate-spin [animation-duration:3000ms]">✦</span>
                     <span className="tracking-widest uppercase">System_Metrics</span>
                 </div>
 
