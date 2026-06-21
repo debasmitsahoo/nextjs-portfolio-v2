@@ -34,7 +34,8 @@ export function SiteHeader() {
                     <Link href="/education" className="transition-colors hover:text-foreground text-foreground/60 font-mono text-xs uppercase tracking-wide">Education</Link>
                     <Link href="/experience" className="transition-colors hover:text-foreground text-foreground/60 font-mono text-xs uppercase tracking-wide">Experience</Link>
                     <Link href="/projects" className="transition-colors hover:text-foreground text-foreground/60 font-mono text-xs uppercase tracking-wide">Projects</Link>
-                    <Link href="/blog" className="transition-colors hover:text-foreground text-foreground/60 font-mono text-xs uppercase tracking-wide">Blog</Link>
+                    {/* Blog temporarily hidden */}
+                    {/* <Link href="/blog" className="transition-colors hover:text-foreground text-foreground/60 font-mono text-xs uppercase tracking-wide">Blog</Link> */}
                     <Link href="/contact">
                         <Button variant="default" size="sm" className="rounded-none px-6 font-mono text-xs uppercase">Contact</Button>
                     </Link>
@@ -57,7 +58,8 @@ export function SiteHeader() {
                     <Link href="/education" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Education</Link>
                     <Link href="/experience" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Experience</Link>
                     <Link href="/projects" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
-                    <Link href="/blog" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+                    {/* Blog temporarily hidden */}
+                    {/* <Link href="/blog" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Blog</Link> */}
                     <Link href="/contact" className="text-sm font-medium py-2 font-mono uppercase" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                 </div>
             )}

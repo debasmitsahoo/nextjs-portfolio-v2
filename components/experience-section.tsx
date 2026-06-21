@@ -22,23 +22,6 @@ const experienceList = [
         tags: ["Firestore", "GCP", "Docker", "Firebase", "React"]
     },
     {
-        id: "craftsmith",
-        year: "2021",
-        title: "Founder",
-        company: "CraftSmith",
-        location: "Bhubaneswar, India",
-        period: "Jan 2021 - Present",
-        type: "Full-time",
-        description: [
-            "Designed and developed the official CraftSmith website from scratch using Next.js, focusing on performance, SEO, and responsive design",
-            "Implemented modern UI components with clean layouts to showcase Odisha handicraft products and brand identity",
-            "Optimized page load performance and SEO, achieving strong Lighthouse scores",
-            "Deployed and managed the production site, including domain and DNS configuration",
-            "Translated business requirements into a scalable web presence supporting brand growth and customer engagement"
-        ],
-        tags: ["Next.js", "SEO", "Performance", "UI/UX", "Product Design"]
-    },
-    {
         id: "tpipay",
         year: "2025",
         title: "Creative Manager (Frontend & UI Engineering)",
@@ -54,6 +37,23 @@ const experienceList = [
             "Ensured technical feasibility, performance, and usability while managing creative direction"
         ],
         tags: ["React / Next.js", "UI Engineering", "Frontend Architecture", "Performance"]
+    },
+    {
+        id: "craftsmith",
+        year: "2021",
+        title: "Founder",
+        company: "CraftSmith",
+        location: "Bhubaneswar, India",
+        period: "Jan 2021 - Present",
+        type: "Full-time",
+        description: [
+            "Designed and developed the official CraftSmith website from scratch using Next.js, focusing on performance, SEO, and responsive design",
+            "Implemented modern UI components with clean layouts to showcase Odisha handicraft products and brand identity",
+            "Optimized page load performance and SEO, achieving strong Lighthouse scores",
+            "Deployed and managed the production site, including domain and DNS configuration",
+            "Translated business requirements into a scalable web presence supporting brand growth and customer engagement"
+        ],
+        tags: ["Next.js", "SEO", "Performance", "UI/UX", "Product Design"]
     }
 ];
 

@@ -8,7 +8,7 @@ import { TechTicker } from "@/components/tech-ticker";
 import { BentoServices } from "@/components/bento-services";
 import { SystemStatus } from "@/components/system-status";
 import { ProjectShowcase } from "@/components/project-showcase";
-import { IntelFeed } from "@/components/intel-feed";
+// import { IntelFeed } from "@/components/intel-feed"; // temporarily hidden
 import { DeploymentReady } from "@/components/deployment-ready";
 
 export default function Home() {
@@ -80,8 +80,8 @@ export default function Home() {
             <ProjectShowcase />
 
             {/* Blog Teaser */}
-            {/* Blog Section */}
-            <IntelFeed />
+            {/* Blog Section — temporarily hidden */}
+            {/* <IntelFeed /> */}
 
             {/* Final CTA Section */}
             <DeploymentReady />
